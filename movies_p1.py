@@ -11,7 +11,7 @@ faves = open('fave_movies.csv')
 with faves as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-                fave = media.Movie(row['title'], row['release_year'], 
+                fave = media.Movie(row['title'], row['release_year'],
                                    row['poster_url'], row['trailer_url'])
                 movies.append(fave)
 
